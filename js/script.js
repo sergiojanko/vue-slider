@@ -14,5 +14,12 @@ const app = new Vue({
         isActive(i){
             return this.currentIndex == i ? "active" : "";
         },
+        increaseIndex(){
+            this.currentIndex === this.images.length-1 ? this.currentIndex = 0 : this.currentIndex++
+        },
+        decreaseIndex(){
+            this.currentIndex === 0 ? this.currentIndex = this.images.length-1 : this.currentIndex--
+
+        },
     }
 });

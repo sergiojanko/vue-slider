@@ -25,7 +25,7 @@
     <main id="app" class="container">
       <div class="row">
         <div class="col-3">
-          <i class="fas fa-angle-left"></i>
+          <i @click="decreaseIndex" class="fas fa-angle-left"></i>
         </div>
         <div class="col-6">
           <figure class="slider">
@@ -39,7 +39,7 @@
           </figure>
         </div>
         <div class="col-3">
-          <i class="fas fa-angle-right"></i>
+          <i @click="increaseIndex" class="fas fa-angle-right"></i>
         </div>
       </div>
     </main>
